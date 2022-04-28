@@ -50,6 +50,7 @@ namespace ApiPersonajesAWS
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors(options => options.AllowAnyOrigin());
             app.UseSwagger();
             app.UseSwaggerUI(options => {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "ApiPersonajesAWS v1");
